@@ -14,7 +14,7 @@ type Person struct {
 
 func IndexHandler(c *gin.Context) {
 	// c.JSON(200, gin.H{
-	// "message": "hello world",
+	// 	"message": "hello world",
 	// })
 
 	// name := c.Params.ByName("name")
@@ -41,3 +41,5 @@ func main() {
 
 	router.Run(":5000")
 }
+
+curl -X GET http://172.16.2.23:5000
